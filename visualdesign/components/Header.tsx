@@ -27,7 +27,7 @@ const NavList = (
                     </Typography>
                     
                     <Typography as="li" variant="body" color="blue-gray" className="p-3 font-semibold" placeholder="">
-                        <Link href="#" className="flex items-center hover-underline-padding">Contact</Link>
+                        <Link href="/contact" className="flex items-center hover-underline-padding">Contact</Link>
                     </Typography>
                 </ul> 
 )
@@ -50,12 +50,13 @@ const Header: React.FC = () => {
     }, []);
 
         return (
-        <div className={`${styles.header} ${isSticky ? styles.sticky : ''}`}>
+        <div className={`${styles.header} ${isSticky ? styles.sticky : ''} `}>
             <Navbar className="z-10 h-max max-w-full rounded-none px-4 py-6 lg:px-10 lg:py-10" placeholder="">
                 <div className="flex items-center justify-between text-blue-gray-900">
-                <Typography as="a"  href="/" className="mr-4 ml-8 cursor-pointer py-1.5 font-bold" placeholder="" >
+                    <Typography as="a"  href="/" className="mr-4 ml-8 cursor-pointer py-1.5 font-bold" placeholder="" >
                         Precision Cycling
                     </Typography>
+        
                     <div className="flex items-center gap-4">
                         <div className="mr-4 hidden lg:block"> {NavList}</div>
                         <div className="flex items-center gap-x-1">
@@ -68,8 +69,6 @@ const Header: React.FC = () => {
                         </div>
                     </div>
                 </div>
-
-
             </Navbar>
         </div>
         )

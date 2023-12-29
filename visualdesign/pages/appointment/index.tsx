@@ -5,127 +5,116 @@ import { Button, Checkbox, Label, TextInput, Datepicker,  FileInput, Textarea } 
 const Appointment: React.FC = () => {
     return (
         <>
-        <Head>
-            <title>Appointment</title>
-        </Head>
+            <Head>
+                <title>Appointment</title>
+            </Head>
 
-        <main className="">
-        <div className="mx-auto max-w-full">
-            <div className="h-[15rem] w-full bg-[#06132E] text-white flex flex-col items-center justify-center">
-                <div className="text-sm text-center mb-4">Precision Cycling</div>
-                <div className="text-3xl font-bold mb-2 text-center">Make an appointment</div>
-                
-                
-                <div className="flex flex-wrap gap-2">
-                <Button outline gradientDuoTone="pinkToOrange">
-                    <strong>Call +32 472 11 22 33</strong> 
-                </Button>
+            <main className="">
+                <div className="mx-auto max-w-full">
+                    <div className="h-[15rem] w-full bg-[#06132E] text-white flex flex-col items-center justify-center">
+                        <div className="text-sm text-center mb-4">Precision Cycling</div>
+                        <div className="text-3xl font-bold mb-2 text-center">Make an appointment</div>
+
+                        <div className="flex flex-wrap gap-2">
+                            <Button outline gradientDuoTone="pinkToOrange">
+                                <strong>Call +32 472 11 22 33</strong>
+                            </Button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
 
-        <div className="flex-grow ">
-            <div className="flex flex-col lg:flex-row gap-8 p-8 items-center justify-center">
-                <div className="max-w-md">
-                    <div className="mb-4 text-1xl font-bold">Your credentials</div>
-                    
-                    <div className="flex flex-row mb-4">
-                        <div className="flex-1 mr-2">
-                            <TextInput id="firstName" type="text" placeholder="First name" style={{ width: '200px' }} required />
-                        </div>
-                        <div className="flex-1 ml-2">
-                            <TextInput id="lastName" type="text" placeholder="Last name" required />
+                <div className="flex-grow p-8">
+                    <div className="flex flex-col lg:flex-row gap-8 p-8 items-center justify-center">
+                        <div className="max-w-3xl w-full bg-white rounded-lg shadow-lg p-6">
+                            <div className="mb-4 text-2xl font-bold">Your credentials</div>
+
+                            <div className="grid grid-cols-2 gap-4 mb-4">
+                                <div>
+                                    <TextInput id="firstName" type="text" placeholder="First name" required />
+                                </div>
+                                <div>
+                                    <TextInput id="lastName" type="text" placeholder="Last name" required />
+                                </div>
+                                <div>
+                                    <TextInput id="email" type="email" placeholder="Your email" required />
+                                </div>
+                                <div>
+                                    <TextInput id="phoneNumber" type="tel" placeholder="Phone number" required />
+                                </div>
+                                <div>
+                                    <TextInput id="street" type="text" placeholder="Your street" required />
+                                </div>
+                                <div>
+                                    <TextInput id="streetNumber" type="text" placeholder="Street number" required />
+                                </div>
+                                <div className="col-span-2">
+                                    <TextInput id="city" type="text" placeholder="Your city" required />
+                                </div>
+                            </div>
+
+                            <div className="border-t border-gray-300 my-4"></div>
+
+                            <div className="mb-4 text-2xl font-bold">Bike Information and Preference</div>
+
+                            <div className="mb-4">
+                                <div className="text-sm mb-1 font-bold">Date:</div>
+                                <Datepicker />
+                            </div>
+
+                            <div className="mb-4">
+                                <div className="text-sm mb-1 font-bold">Time Preference:</div>
+                                <div className="flex items-center gap-3">
+                                <Checkbox id="morning"/>
+                                <Label htmlFor="morning">Morning</Label>
+
+                                <Checkbox id="afternoon" />
+                                <Label htmlFor="afternoon">Afternoon</Label>
+
+                                <Checkbox id="evening" />
+                                <Label htmlFor="evening">Evening</Label>
+
+                                <Checkbox id="nopreference" />
+                                <Label htmlFor="nopreference">No preference</Label>
+                                </div>
+                            </div>
+
+                            <div className="mb-4">
+                                <div className="text-sm mb-1 font-bold">Bike Information:</div>
+                                <div className="grid grid-cols-2 gap-4">
+                                    <div>
+                                        <TextInput id="bikeBrand" type="text" placeholder="Brand" required />
+                                    </div>
+                                    <div>
+                                        <FileInput id="bikeImage" multiple />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="mb-4">
+                                <div className="text-sm mb-1 font-bold">Service:</div>
+                                <Textarea id="comment" placeholder="Describe the problem or service needed" required rows={4} />
+                            </div>
+
+                            <div className="mb-4 flex items-center gap-2">
+                                <Checkbox id="accept" />
+                                <Label htmlFor="accept" className="flex">
+                                    I agree with the&nbsp;
+                                    <a href="#" className="text-cyan-600 hover:underline dark:text-cyan-500">
+                                        terms and conditions
+                                    </a>
+                                </Label>
+                            </div>
+
+                            <Button type="submit" className="w-full bg-[#06132E]">
+                                Send
+                            </Button>
                         </div>
                     </div>
-
-                    <div className="flex flex-row mb-4">
-                        <div className="flex-1 mr-2">
-                            <TextInput id="email" type="email" placeholder="Your email" style={{ width: '250px' }} required />
-                        </div>
-                        <div className="flex-1 ml-2">
-                            <TextInput id="phoneNumber" type="tel" placeholder="Phone number" required />
-                        </div>
-                    </div>
-
-                    <div className="flex flex-row mb-4">
-                        <div className="flex-1 mr-2">
-                            <TextInput id="street" type="text" placeholder="Your street" style={{ width: '300px' }} required />
-                        </div>
-                        <div className="flex-1 ml-2">
-                            <TextInput id="streetNumber" type="text" placeholder="Street number" required />
-                        </div>
-                    </div>
-
-                    <div className="flex flex-row mb-4">
-                        <div className="flex-1">
-                            <TextInput id="city" type="text" placeholder="Your city" required helperText= { <> We’ll never share your details. Read our<a href="#" className="ml-1 font-medium text-cyan-600 hover:underline dark:text-cyan-500">Privacy Policy</a>. </>}/>
-                        </div>
-                    </div>
-
-                    <div className="border-t border-gray-300 my-4"></div>
-
-                    <div className="mb-4 text-1xl font-bold">Bike information and preference</div>
-
-                    <div className="mb-1 text-sm ">Date:</div>
-                    <div className="flex flex-row mb-4">
-                        <div className="flex-1">
-                            <Datepicker />
-                        </div>
-                    </div>
-
-                    <div className="flex items-center gap-3 mb-4">
-                        <Checkbox id="promotion" />
-                        <Label htmlFor="promotion">Morning</Label>
-
-                        <Checkbox id="promotion" />
-                        <Label htmlFor="promotion">Afternoon</Label>
-
-                        <Checkbox id="promotion" />
-                        <Label htmlFor="promotion">Evening</Label>
-
-                        <Checkbox id="promotion" />
-                        <Label htmlFor="promotion">No preference</Label>
-                    </div>
-
-                    <div className="mb-1 text-sm ">Bike information:</div>
-                    <div className="flex flex-row mb-4">
-                        <div className="flex-1 mr-2">
-                            <TextInput id="city" type="text" placeholder="Brand and model" required/>
-                        </div>
-                        <div className="flex-1 ml-2">
-                            <FileInput id="multiple-file-upload" multiple />
-                        </div>
-                    </div>
-
-                    <div className="mb-1 text-sm ">Service:</div>
-                    <div className="flex flex-row mb-4">
-                        <div className="flex-1">
-                            <Textarea id="comment" placeholder="What is the problem or what service are you looking for?" required rows={4} />
-                        </div>
-                    </div>
-
-                    <div className="flex items-center gap-2 mb-4">
-                        <Checkbox id="accept" />
-                        <Label htmlFor="accept" className="flex">
-                        I agree with the&nbsp;
-                        <a href="#" className="text-cyan-600 hover:underline dark:text-cyan-500">
-                            terms and conditions
-                        </a>
-                        </Label>
-                    </div>
-
-                    <Button type="submit">Send</Button>
-
-
                 </div>
-            </div>
-        </div>
-
-        </main>
-
+            </main>
         </>
-    )
-}
+    );
+};
 
 export default Appointment;

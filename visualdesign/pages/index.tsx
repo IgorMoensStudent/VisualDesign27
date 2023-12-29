@@ -20,8 +20,8 @@ const Home = () => {
                 <title>Home</title>
             </Head>
 
-            <main className="mt-[-170px]">
-                <div className="mx-auto max-w-full py-12 main">
+            <main className="">
+                <div className="mx-auto max-w-full">
                     <div className="h-[32rem] w-full bg-[#06132E] text-white flex flex-col items-center justify-center">
                         <div className="text-6xl font-bold mb-2 text-center">Precision Cycling</div>
                         <div className="text-xl text-center mb-4">Repair / Upgrade Shop</div>
@@ -32,7 +32,7 @@ const Home = () => {
                     </div>
                 </div> 
 
-                <div className="flex justify-center mt-[-140px] mb-4 px-10">
+                <div className="flex justify-center mt-4 mb-4 gap-2">
                     <div className="p-1">
                         <div className="relative">
                         <Image
@@ -97,7 +97,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="mx-auto max-w-full pt-2">
+                <div className="mx-auto max-w-full pt-2 mt-2">
                     <div className="h-[15rem] w-full bg-[#06132E] text-white flex flex-col items-center justify-center">
                         <div className="text-sm text-center mb-4">Precision Cycling</div>
                         <div className="text-3xl font-bold mb-2 text-center">Do you need help with a bicycle repair?</div>
