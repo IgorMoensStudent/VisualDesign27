@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import Image from "next/image";
+import Link from 'next/link';
 import repair_1 from "../public/BikeRepair1.jpg";
 import repair_2 from "../public/BikeRepair2.jpg";
 import repair_3 from "../public/BikeRepair3.jpg";
@@ -26,9 +27,7 @@ const Home = () => {
                         <div className="text-xl text-center mb-4">Repair / Upgrade Shop</div>
                         
                         <div className="flex flex-wrap gap-2">
-                        <Button outline gradientDuoTone="pinkToOrange">
-                            Make an appointment 
-                        </Button>
+                        <Button outline gradientDuoTone="pinkToOrange"><Link href="/appointment">Make an appointment</Link></Button>
                         </div>
                     </div>
                 </div> 
@@ -104,9 +103,7 @@ const Home = () => {
                         <div className="text-3xl font-bold mb-2 text-center">Do you need help with a bicycle repair?</div>
                         
                         <div className="flex flex-wrap gap-2">
-                        <Button outline gradientDuoTone="pinkToOrange">
-                            Make an appointment 
-                        </Button>
+                        <Button outline gradientDuoTone="pinkToOrange"><Link href="/appointment">Make an appointment</Link></Button>
                         </div>
                     </div>
                 </div>
