@@ -12,6 +12,7 @@ const Footers : React.FC = () => {
                     href="https://www.ucll.be/nl"
                     src={Logo.src}
                     alt="UCLL Logo"
+                    target="_blank"
                     
                 />
                 <Footer.LinkGroup>
