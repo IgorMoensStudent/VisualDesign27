@@ -24,7 +24,7 @@ const Appointment: React.FC = () => {
                 </div>
 
 
-                <div className="flex-grow p-12">
+                <div className="flex-grow p-12 bg-[#F5F5F5]">
                     <div className="flex flex-col lg:flex-row gap-12 p-12 items-center justify-center">
                         <div className="max-w-4xl w-full bg-white rounded-lg shadow-lg p-8">
                             <div className="mb-8 text-3xl font-bold">Your credentials</div>

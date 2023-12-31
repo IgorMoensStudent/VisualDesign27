@@ -18,7 +18,7 @@ const Contact: React.FC = () => {
             </div>
         </div>
 
-        <div className="flex-grow p-8">
+        <div className="flex-grow p-8 bg-[#F5F5F5]">
             <div className="flex flex-col lg:flex-row gap-8 p-8 items-center justify-center">
                 <div className="max-w-3xl w-full bg-white rounded-lg shadow-lg p-8">
                     <div className="mb-6 text-3xl font-bold">Send us a message</div>
@@ -45,9 +45,6 @@ const Contact: React.FC = () => {
 
                             <Checkbox id="message" />
                             <Label htmlFor="message">Send message</Label>
-
-                            <Checkbox id="nopreference" />
-                            <Label htmlFor="nopreference">No preference</Label>
                         </div>
                     </div>
 

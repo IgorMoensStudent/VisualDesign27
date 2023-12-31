@@ -18,7 +18,7 @@ const Home = () => {
 
             <main className="">
                 <div className="mx-auto max-w-full">
-                    <div className="h-[32rem] w-full bg-[#06132E] text-white flex flex-col items-center justify-center">
+                    <div className="h-[30rem] w-full bg-[#06132E] text-white flex flex-col items-center justify-center">
                         <div className="text-6xl font-bold mb-2 text-center">Precision Cycling</div>
                         <div className="text-xl text-center mb-4">Repair / Upgrade Shop</div>
                         
@@ -93,7 +93,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="mx-auto max-w-full pt-2 mt-2">
+                <div className="mx-auto max-w-full pt-0 mt-0">
                     <div className="h-[15rem] w-full bg-[#06132E] text-white flex flex-col items-center justify-center">
                         <div className="text-sm text-center mb-4">Precision Cycling</div>
                         <div className="text-3xl font-bold mb-2 text-center">Do you need help with a bicycle repair?</div>
