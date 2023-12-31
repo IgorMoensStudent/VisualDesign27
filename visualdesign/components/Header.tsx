@@ -19,7 +19,7 @@ const NavList = (
                     </Typography>
 
                     <Typography as="li" variant="body" color="blue-gray" className="p-3 font-semibold" placeholder="">
-                        <Link href="#" className="flex items-center hover-underline-padding">Shop</Link>
+                        <Link href="/shop" className="flex items-center hover-underline-padding">Shop</Link>
                     </Typography>
 
                     <Typography as="li" variant="body" color="blue-gray" className="p-3 font-semibold" placeholder="">

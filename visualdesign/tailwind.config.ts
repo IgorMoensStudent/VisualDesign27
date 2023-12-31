@@ -22,6 +22,6 @@ module.exports = withMT ({
     },
   },
   plugins: [
-    require("flowbite/plugin")
+    require("flowbite/plugin"),
   ],
 });

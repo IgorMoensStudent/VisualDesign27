@@ -8,10 +8,6 @@ import repair_3 from "../public/BikeRepair3.jpg";
 import Bart from "../public/BartVermeulen.jpg";
 import { Button } from 'flowbite-react';
 
-import {
-  Typography,
-  Card,
-} from "@material-tailwind/react";
 
 const Home = () => {
     return (
