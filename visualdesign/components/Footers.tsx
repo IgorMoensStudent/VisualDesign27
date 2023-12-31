@@ -35,7 +35,7 @@ const Footers : React.FC = () => {
                 </div>
             </div>
         </Footer>
-    );
+    )
 }
 
 export default Footers;
