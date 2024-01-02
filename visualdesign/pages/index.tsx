@@ -37,7 +37,7 @@ const Home = () => {
                             width={500}
                             height={500}
                         />
-                        <p className="absolute bottom-8 left-4 text-white font-bold text-lg border-b-2 border-white">Bike repairs at home</p>
+                        <p className="absolute bottom-8 left-4 text-white font-bold text-lg border-b-2 border-white"><Link href="/appointment">Repairs</Link></p>
                         </div>
                     </div>
 
@@ -49,7 +49,7 @@ const Home = () => {
                             width={500}
                             height={500}
                         />
-                        <p className="absolute bottom-8 left-4 text-white font-bold text-lg border-b-2 border-white">Bike repairs for companies</p>
+                        <p className="absolute bottom-8 left-4 text-white font-bold text-lg border-b-2 border-white"><Link href="/appointment">Upgrades</Link></p>
                         </div>
                     </div>
 
@@ -61,7 +61,7 @@ const Home = () => {
                             width={500}
                             height={500}
                         />
-                        <p className="absolute bottom-8 left-4 text-white font-bold text-lg border-b-2 border-white">Workshop bike repairs</p>
+                        <p className="absolute bottom-8 left-4 text-white font-bold text-lg border-b-2 border-white"><Link href="/shop">Shop</Link></p>
                         </div>
                     </div>
                 </div>
