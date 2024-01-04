@@ -2,11 +2,23 @@ import Head from "next/head";
 import React from "react";
 import Image from "next/image";
 import Link from 'next/link';
+import { Button } from 'flowbite-react';
+
 import repair_1 from "../public/BikeRepair1.jpg";
 import repair_2 from "../public/BikeRepair2.jpg";
 import repair_3 from "../public/BikeRepair3.jpg";
 import Bart from "../public/BartVermeulen.jpg";
-import { Button } from 'flowbite-react';
+import cover from "../public/BikeCover.jpg";
+import image1 from "../public/Image1.jpg";
+import image2 from "../public/Image2.jpg";
+import image3 from "../public/Image3.jpg";
+import image4 from "../public/Image4.jpg";
+import image5 from "../public/Image5.jpg";
+import image6 from "../public/Image6.jpg";
+import image7 from "../public/Image7.jpg";
+
+
+
 
 
 const Home = () => {
@@ -34,8 +46,8 @@ const Home = () => {
                         <Image
                             src={repair_1}
                             alt="Yellow Bike"
-                            width={500}
-                            height={500}
+                            width={400}
+                            height={400}
                         />
                         <p className="absolute bottom-8 left-4 text-white font-bold text-lg border-b-2 border-white"><Link href="/appointment">Repairs</Link></p>
                         </div>
@@ -46,8 +58,8 @@ const Home = () => {
                         <Image
                             src={repair_2}
                             alt="Yellow Bike"
-                            width={500}
-                            height={500}
+                            width={400}
+                            height={400}
                         />
                         <p className="absolute bottom-8 left-4 text-white font-bold text-lg border-b-2 border-white"><Link href="/appointment">Upgrades</Link></p>
                         </div>
@@ -58,8 +70,8 @@ const Home = () => {
                         <Image
                             src={repair_3}
                             alt="Yellow Bike"
-                            width={500}
-                            height={500}
+                            width={400}
+                            height={400}
                         />
                         <p className="absolute bottom-8 left-4 text-white font-bold text-lg border-b-2 border-white"><Link href="/shop">Shop</Link></p>
                         </div>
@@ -68,19 +80,20 @@ const Home = () => {
 
                 <div className="flex-grow maincontainer">
                     <div className="flex flex-col lg:flex-row gap-8 p-10 items-center justify-center ">
-                        <div className="flex-shrink-0 mb-4 lg:mb-0">
+                        <div className="flex-shrink-0 mb-4 lg:mb-0 relative">
                         <Image
                             src={Bart}
                             alt="Bart Vermeulen"
                             width={400}
                             height={400}
-                            className="rounded-full"
+                            className="rounded-2xl"
                         />
+                        <p className="absolute bottom-0 left-0 right-0 text-white font-bold text-sm bg-[#06132E] text-center py-2">Bart Vermeulen</p>
                         </div>
                         <div className="flex flex-col text-center lg:text-left pl-20">
                         <h2 className="text-4xl font-bold mb-4">A Bicycle Mechanic with Passion</h2>
                         <p className="text-gray-700 mb-4">
-                            Hi, I'm Bart Vermeulen, a dedicated bicycle mechanic with over a decade of experience. 
+                            Hi, my name is Bart Vermeulen, I am a dedicated bicycle mechanic with over a decade of experience. 
                             I've worked in various bicycle stores in and around Leuven since 2006. My passion for cycling led me to merge my skills with entrepreneurial spirit, 
                             resulting in Precision Cycling - the inaugural bicycle repair service in Leuven that brings convenience to your home or workplace.
                         </p>
@@ -93,16 +106,85 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="mx-auto max-w-full pt-0 mt-0">
-                    <div className="h-[15rem] w-full bg-[#06132E] text-white flex flex-col items-center justify-center">
-                        <div className="text-sm text-center mb-4">Precision Cycling</div>
-                        <div className="text-3xl font-bold mb-2 text-center">Do you need help with a bicycle repair?</div>
-                        
-                        <div className="flex flex-wrap gap-2">
-                        <Button outline gradientDuoTone="pinkToOrange"><Link href="/appointment">Make an appointment</Link></Button>
+                <div className="mx-auto max-w-full pt-0 mt-0 relative">
+                    <div className="h-[15rem] w-full bg-cover bg-center relative flex flex-col items-center justify-center">
+                        <Image
+                        src={cover}
+                        alt="Cover Image"
+                        layout="fill"
+                        objectFit="cover"
+                        objectPosition="top-center"
+                        />
+                        <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center">
+                            <div className="text-sm text-center mb-4 text-[#F5F5F5]">Precision Cycling</div>
+                            <div className="text-3xl font-bold mb-2 text-center text-[#E5E4E2]">Do you need help with repairs / upgrades?</div>
+                            <div className="flex flex-wrap gap-2"><Button outline gradientDuoTone="pinkToOrange"><Link href="/appointment">Make an appointment</Link></Button></div>
                         </div>
                     </div>
                 </div>
+                
+                <div className="maincontainer">
+                <div className="mb-6 text-center text-2xl font-bold pt-4">Always ready, for a new adventure.</div>
+                    <div className="flex flex-wrap justify-center gap-1 ">
+                        <div className="p-3">
+                            <Image
+                                src={image1}
+                                alt="image1"
+                                width={350}
+                                height={350}
+                                className="rounded-2xl"
+                            />
+                        </div>
+                        <div className="p-3">
+                            <Image
+                                src={image3}
+                                alt="image3"
+                                width={320}
+                                height={320}
+                                className="rounded-2xl"
+                            />
+                        </div>
+                        <div className="p-3">
+                            <Image
+                                src={image2}
+                                alt="image2"
+                                width={350}
+                                height={350}
+                                className="rounded-2xl"
+                            />
+                        </div>
+                        <div className="p-3">
+                            <Image
+                                src={image4}
+                                alt="image4"
+                                width={350}
+                                height={350}
+                                className="rounded-2xl"
+                            />
+                        </div>
+                        <div className="p-3">
+                            <Image
+                                src={image5}
+                                alt="image5"
+                                width={350}
+                                height={350}
+                                className="rounded-2xl"
+                            />
+                        </div>
+                        <div className="p-3">
+                            <Image
+                                src={image7}
+                                alt="image5"
+                                width={350}
+                                height={350}
+                                className="rounded-2xl"
+                            />
+                        </div>
+                        
+                    </div>
+                </div>
+                
+
             </main>
         </>
     )
