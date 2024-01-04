@@ -20,7 +20,7 @@ const Contact: React.FC = () => {
 
             <div className="flex-grow p-8 bg-[#F5F5F5]">
 
-                <div className="flex flex-col lg:flex-row gap-8 p-8 items-center justify-center bg-white rounded-lg">
+                <div className="flex flex-col lg:flex-row gap-8 p-8 items-center justify-center bg-white rounded-lg shadow-lg p-8">
 
                     <div className="max-w-3xl w-full p-2 mb-40">
                         <div className="mb-6 text-3xl font-bold">Contact Information</div>

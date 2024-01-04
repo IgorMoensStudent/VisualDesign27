@@ -16,10 +16,9 @@ import image4 from "../public/Image4.jpg";
 import image5 from "../public/Image5.jpg";
 import image6 from "../public/Image6.jpg";
 import image7 from "../public/Image7.jpg";
-
-
-
-
+import logo1 from "../public/Logo1.png";
+import logo2 from "../public/Logo2.png";
+import logo3 from "../public/Logo3.png";
 
 const Home = () => {
     return (
@@ -38,7 +37,7 @@ const Home = () => {
                         <Button outline gradientDuoTone="pinkToOrange"><Link href="/appointment">Make an appointment</Link></Button>
                         </div>
                     </div>
-                </div> 
+                </div>
 
                 <div className="flex justify-center mt-4 mb-4 gap-2">
                     <div className="p-1">
@@ -183,8 +182,6 @@ const Home = () => {
                         
                     </div>
                 </div>
-                
-
             </main>
         </>
     )
