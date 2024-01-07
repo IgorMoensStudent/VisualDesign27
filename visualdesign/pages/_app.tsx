@@ -9,6 +9,7 @@ export default function App({ Component, pageProps }: AppProps) {
     return (
         <div>
             <Header />
+            <link rel="icon" href="../public/logo1.png" sizes="any" />
             <Component {...pageProps} />
             <Footers />
         </div>

@@ -14,19 +14,19 @@ import {
 
 const NavList = (
     <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-                    <Typography as="li" variant="body" color="blue-gray" className="p-3 font-semibold" placeholder="">
+                    <Typography as="li" color="blue-gray" className="p-3 font-semibold" placeholder="">
                         <Link href="/" className="flex items-center hover-underline-padding">Home</Link>
                     </Typography>
 
-                    <Typography as="li" variant="body" color="blue-gray" className="p-3 font-semibold" placeholder="">
+                    <Typography as="li" color="blue-gray" className="p-3 font-semibold" placeholder="">
                         <Link href="/shop" className="flex items-center hover-underline-padding">Shop</Link>
                     </Typography>
 
-                    <Typography as="li" variant="body" color="blue-gray" className="p-3 font-semibold" placeholder="">
+                    <Typography as="li" color="blue-gray" className="p-3 font-semibold" placeholder="">
                         <Link href="/about" className="flex items-center hover-underline-padding">About us</Link>
                     </Typography>
                     
-                    <Typography as="li" variant="body" color="blue-gray" className="p-3 font-semibold" placeholder="">
+                    <Typography as="li" color="blue-gray" className="p-3 font-semibold" placeholder="">
                         <Link href="/contact" className="flex items-center hover-underline-padding">Contact</Link>
                     </Typography>
                 </ul> 
