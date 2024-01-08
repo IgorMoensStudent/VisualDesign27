@@ -1,15 +1,16 @@
 import type { AppProps } from 'next/app'
 import '../styles/global.css'
 import Header from '../components/Header'
-import { Footer } from 'flowbite-react';
+import { Inter } from 'next/font/google'
 import Footers from '../components/Footers';
+
+const inter = Inter({ subsets: ['latin'] })
 
 
 export default function App({ Component, pageProps }: AppProps) {
     return (
-        <div>
+        <div className={inter.className}>
             <Header />
-            <link rel="icon" href="../public/logo1.png" sizes="any" />
             <Component {...pageProps} />
             <Footers />
         </div>
