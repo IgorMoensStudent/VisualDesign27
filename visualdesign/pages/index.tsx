@@ -31,7 +31,7 @@ const Home = () => {
 
             <main className="">
                 <div className="mx-auto max-w-full relative">
-                    <div className="h-[28rem] w-full bg-[#06132E] text-white flex flex-col items-center justify-center relative">
+                    <div className="h-[29rem] w-full bg-[#06132E] text-white flex flex-col items-center justify-center relative">
                         <div className="relative z-10 text-6xl font-bold mb-2 text-center">Precision Cycling</div>
                         <div className="relative z-10 text-xl text-center mb-4">Repair / Upgrade Shop</div>
 
@@ -55,37 +55,40 @@ const Home = () => {
                 </div>
 
                 <div className="flex justify-center mt-4 mb-4 gap-2">
-                    <div className="p-1">
-                        <div className="relative">
+                    <div className="p-1 relative">
+                        <div className="relative group">
                         <Image
                             src={repair_1}
                             alt="Yellow Bike"
                             width={400}
                             height={400}
+                            className="transition-opacity duration-300 group-hover:opacity-90"
                         />
                         <p className="absolute bottom-8 left-4 text-white font-bold text-lg border-b-2 border-white transition-colors duration-300 hover:text-[#C8AF46] hover:border-[#C8AF46]"><Link href="/appointment">Repairs</Link></p>
                         </div>
                     </div>
 
-                    <div className="p-1">
-                        <div className="relative">
+                    <div className="p-1 relative">
+                        <div className="relative group">
                         <Image
                             src={repair_2}
                             alt="Yellow Bike"
                             width={400}
                             height={400}
+                            className="transition-opacity duration-300 group-hover:opacity-90"
                         />
                         <p className="absolute bottom-8 left-4 text-white font-bold text-lg border-b-2 border-white transition-colors duration-300 hover:text-[#C8AF46] hover:border-[#C8AF46]"><Link href="/appointment">Upgrades</Link></p>
                         </div>
                     </div>
 
-                    <div className="p-1">
-                        <div className="relative">
+                    <div className="p-1 relative">
+                        <div className="relative group">
                         <Image
                             src={repair_3}
                             alt="Yellow Bike"
                             width={400}
                             height={400}
+                            className="transition-opacity duration-300 group-hover:opacity-90"
                         />
                         <p className="absolute bottom-8 left-4 text-white font-bold text-lg border-b-2 border-white transition-colors duration-300 hover:text-[#C8AF46] hover:border-[#C8AF46]"><Link href="/shop">Shop</Link></p>
                         </div>
@@ -142,8 +145,8 @@ const Home = () => {
                         objectPosition="top-center"
                         />
                         <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center">
-                            <div className="text-sm text-center mb-4 text-[#F5F5F5]">Precision Cycling</div>
-                            <div className="text-3xl font-bold mb-2 text-center text-[#E5E4E2]">Do you need help with repairs / upgrades?</div>
+                            <div className="text-base text-center mb-4 text-[#E5E4E2]">Precision Cycling</div>
+                            <div className="text-4xl font-bold mb-2 text-center text-[#E5E4E2]">Do you need help with repairs / upgrades?</div>
                             <div className="flex flex-wrap gap-2"><Button outline gradientDuoTone="pinkToOrange"><Link href="/appointment">Make an appointment</Link></Button></div>
                         </div>
                     </div>

@@ -90,7 +90,25 @@ const About : React.FC = () => {
             </div>
         </div>
 
-        <div className="flex-grow">
+    
+        <div className="mx-auto max-w-full pt-0 mt-0 relative">
+                    <div className="h-[15rem] w-full bg-cover bg-center relative flex flex-col items-center justify-center">
+                        <Image
+                        src={cover}
+                        alt="Cover Image"
+                        layout="fill"
+                        objectFit="cover"
+                        objectPosition="top-center"
+                        />
+                        <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center">
+                            <div className="text-sm text-center mb-4 text-[#F5F5F5]">Precision Cycling</div>
+                            <div className="text-3xl font-bold mb-2 text-center text-[#E5E4E2]">Do you need help with repairs / upgrades?</div>
+                            <div className="flex flex-wrap gap-2"><Button outline gradientDuoTone="pinkToOrange"><Link href="/appointment">Make an appointment</Link></Button></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="flex-grow maincontainer">
             <div className="flex flex-col lg:flex-row gap-8 p-10 items-center justify-center mt-8 mb-8">
                 <div className="flex flex-col text-center lg:text-left pl-20">
                     <h2 className="text-4xl font-bold mb-4 text-center">Follow us on social media</h2>
@@ -155,24 +173,6 @@ const About : React.FC = () => {
                 </div>
             </div>
         </div>
-
-
-        <div className="mx-auto max-w-full pt-0 mt-0 relative">
-                    <div className="h-[15rem] w-full bg-cover bg-center relative flex flex-col items-center justify-center">
-                        <Image
-                        src={cover}
-                        alt="Cover Image"
-                        layout="fill"
-                        objectFit="cover"
-                        objectPosition="top-center"
-                        />
-                        <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center">
-                            <div className="text-sm text-center mb-4 text-[#F5F5F5]">Precision Cycling</div>
-                            <div className="text-3xl font-bold mb-2 text-center text-[#E5E4E2]">Do you need help with repairs / upgrades?</div>
-                            <div className="flex flex-wrap gap-2"><Button outline gradientDuoTone="pinkToOrange"><Link href="/appointment">Make an appointment</Link></Button></div>
-                        </div>
-                    </div>
-                </div>
 
 
 

@@ -66,6 +66,7 @@ const Header: React.FC = () => {
                             </Button>
                             <Button variant="gradient" size="lg" className="hidden lg:inline-block" placeholder="">
                                 <span>Sign in</span>
+                                <Link href="/registration"></Link>
                             </Button>
                         </div>
                     </div>
