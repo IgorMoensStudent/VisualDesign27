@@ -13,8 +13,8 @@ const Contact: React.FC = () => {
       <main>
         <div className="mx-auto max-w-full">
                 <div className="h-[15rem] w-full bg-[#06132E] text-white flex flex-col items-center justify-center">
-                    <div className="text-sm text-center mb-4">Precision Cycling</div>
-                    <div className="text-3xl font-bold mb-2 text-center">Contact Us</div>
+                    <div className="text-base text-center mb-4">Precision Cycling</div>
+                    <div className="text-4xl font-bold mb-2 text-center">Contact Us</div>
                 </div>
             </div>
 
@@ -61,7 +61,7 @@ const Contact: React.FC = () => {
                                 <span className="w-6 h-6 mr-2 text-xl">
                                     🕔
                                 </span>
-                                <span className="text-lg">Monday to Friday: 09.00 - 17.00h</span>
+                                <span className="text-lg">Monday to Friday: 09.00 - 17.00.</span>
                             </div>
                         </div>
                     </div>

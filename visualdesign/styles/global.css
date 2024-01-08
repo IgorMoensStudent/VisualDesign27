@@ -10,30 +10,36 @@
 
 
 .hover-underline-padding:hover {
-    padding-bottom: 1px; /* Adjust the value as needed */
-    border-bottom: 2px solid black; /* Adjust the color as needed */
+    border-bottom: 2px solid #C8AF46; 
     margin-bottom: -2px;
-  }
+}
 
-  .main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
+.hierclass {
+  color: #C8AF46;
+  border-bottom: 2px solid #C8AF46; 
+  margin-bottom: -2px;
+}
 
-  .maincontainer{
-    width: 100%;
-    margin: auto;
-    padding: 16px;  
-    background-color: #F5F5F5;
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.maincontainer{
+  width: 100%;
+  margin: auto;
+  padding: 16px;  
+  background-color: #F5F5F5;
 }
 
 .sidecontainer{
-  width: 50%;
-  margin: auto;
-  padding: 16px;  
-  background-color: #EAE6E3;
+width: 50%;
+margin: auto;
+padding: 16px;  
+background-color: #EAE6E3;
 }

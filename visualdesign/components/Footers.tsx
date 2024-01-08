@@ -12,18 +12,12 @@ const Footers : React.FC = () => {
         <Footer container>
             <div className="w-full text-center">
                 <div className="w-full justify-between sm:flex sm:items-center sm:justify-between">
-                <Image
-                    src={logo3}
-                    alt="logo"
-                    width={50}
-                    height={50}
-                    className="rounded-2xl"
-                />
+                <p></p>
                 <Footer.LinkGroup>
-                    <Footer.Link href="#">About</Footer.Link>
-                    <Footer.Link href="#">Privacy Policy</Footer.Link>
-                    <Footer.Link href="#">Licensing</Footer.Link>
-                    <Footer.Link href="#">Contact</Footer.Link>
+                    <Footer.Link href="/">Home</Footer.Link>
+                    <Footer.Link href="/shop">Shop</Footer.Link>
+                    <Footer.Link href="/about">About us</Footer.Link>
+                    <Footer.Link href="/contact">Contact</Footer.Link>
                 </Footer.LinkGroup>
                 </div>
                 <Footer.Divider />
@@ -33,8 +27,6 @@ const Footers : React.FC = () => {
                     <Footer.Icon href="#" icon={BsFacebook} />
                     <Footer.Icon href="#" icon={BsInstagram} />
                     <Footer.Icon href="#" icon={BsTwitter} />
-                    <Footer.Icon href="#" icon={BsGithub} />
-                    <Footer.Icon href="#" icon={BsDribbble} />
                 </div>
                 </div>
             </div>

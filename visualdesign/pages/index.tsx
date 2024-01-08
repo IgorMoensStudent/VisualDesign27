@@ -16,6 +16,8 @@ import image4 from "../public/Image4.jpg";
 import image5 from "../public/Image5.jpg";
 import image6 from "../public/Image6.jpg";
 import image7 from "../public/Image7.jpg";
+import Ketting from "../public/Ketting.png";
+import Bike from "../public/Bike.png";
 import logo1 from "../public/Logo1.png";
 import logo2 from "../public/Logo2.png";
 import logo3 from "../public/Logo3.png";
@@ -28,13 +30,26 @@ const Home = () => {
             </Head>
 
             <main className="">
-                <div className="mx-auto max-w-full">
-                    <div className="h-[30rem] w-full bg-[#06132E] text-white flex flex-col items-center justify-center">
-                        <div className="text-6xl font-bold mb-2 text-center">Precision Cycling</div>
-                        <div className="text-xl text-center mb-4">Repair / Upgrade Shop</div>
+                <div className="mx-auto max-w-full relative">
+                    <div className="h-[28rem] w-full bg-[#06132E] text-white flex flex-col items-center justify-center relative">
+                        <div className="relative z-10 text-6xl font-bold mb-2 text-center">Precision Cycling</div>
+                        <div className="relative z-10 text-xl text-center mb-4">Repair / Upgrade Shop</div>
+
+                        <div className="absolute top-20  left-0 w-full h-full flex flex-col items-center justify-center">
+                            <div className="flex flex-wrap gap-2">
+                                <Button outline gradientDuoTone="pinkToOrange">
+                                    <Link href="/appointment">Make an appointment</Link>
+                                </Button>
+                            </div>
+                        </div>
                         
-                        <div className="flex flex-wrap gap-2">
-                        <Button outline gradientDuoTone="pinkToOrange"><Link href="/appointment">Make an appointment</Link></Button>
+                        <div className="absolute top-6 left-1/2 -translate-x-1/2 mt-4">
+                            <Image
+                                src={Bike}
+                                alt="Bike"
+                                width={180} 
+                                height={180} 
+                            />
                         </div>
                     </div>
                 </div>
@@ -48,7 +63,7 @@ const Home = () => {
                             width={400}
                             height={400}
                         />
-                        <p className="absolute bottom-8 left-4 text-white font-bold text-lg border-b-2 border-white"><Link href="/appointment">Repairs</Link></p>
+                        <p className="absolute bottom-8 left-4 text-white font-bold text-lg border-b-2 border-white transition-colors duration-300 hover:text-[#C8AF46] hover:border-[#C8AF46]"><Link href="/appointment">Repairs</Link></p>
                         </div>
                     </div>
 
@@ -60,7 +75,7 @@ const Home = () => {
                             width={400}
                             height={400}
                         />
-                        <p className="absolute bottom-8 left-4 text-white font-bold text-lg border-b-2 border-white"><Link href="/appointment">Upgrades</Link></p>
+                        <p className="absolute bottom-8 left-4 text-white font-bold text-lg border-b-2 border-white transition-colors duration-300 hover:text-[#C8AF46] hover:border-[#C8AF46]"><Link href="/appointment">Upgrades</Link></p>
                         </div>
                     </div>
 
@@ -72,23 +87,35 @@ const Home = () => {
                             width={400}
                             height={400}
                         />
-                        <p className="absolute bottom-8 left-4 text-white font-bold text-lg border-b-2 border-white"><Link href="/shop">Shop</Link></p>
+                        <p className="absolute bottom-8 left-4 text-white font-bold text-lg border-b-2 border-white transition-colors duration-300 hover:text-[#C8AF46] hover:border-[#C8AF46]"><Link href="/shop">Shop</Link></p>
                         </div>
                     </div>
                 </div>
 
                 <div className="flex-grow maincontainer">
                     <div className="flex flex-col lg:flex-row gap-8 p-10 items-center justify-center ">
+
                         <div className="flex-shrink-0 mb-4 lg:mb-0 relative">
-                        <Image
-                            src={Bart}
-                            alt="Bart Vermeulen"
-                            width={400}
-                            height={400}
-                            className="rounded-2xl"
-                        />
-                        <p className="absolute bottom-0 left-0 right-0 text-white font-bold text-sm bg-[#06132E] text-center py-2">Bart Vermeulen</p>
+                            <Image
+                                src={Bart}
+                                alt="Bart Vermeulen"
+                                width={400}
+                                height={400}
+                                className="rounded-2xl"
+                            />
+                            <p className="absolute bottom-0 left-0 right-0 text-white font-bold text-sm bg-[#06132E] text-center py-1">Bart Vermeulen</p>
+                        
+                            <div  className="absolute top-0 right-0 mt-4 mr-[-40px]">
+                                <Image
+                                    src={logo2}
+                                    alt="Logo 1"
+                                    width={95} 
+                                    height={95} 
+                                    className="rounded-2xl"
+                                />
+                            </div>
                         </div>
+
                         <div className="flex flex-col text-center lg:text-left pl-20">
                         <h2 className="text-4xl font-bold mb-4">A Bicycle Mechanic with Passion</h2>
                         <p className="text-gray-700 mb-4">

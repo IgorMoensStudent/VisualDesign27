@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+
 import { Fragment, useState } from 'react'
 import { Dialog, Disclosure, Menu, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
@@ -7,8 +8,6 @@ import { ChevronDownIcon, FunnelIcon, MinusIcon, PlusIcon, Squares2X2Icon } from
 
 
 const sortOptions = [
-
-
     { name: 'Most Popular', href: '#', current: true },
     { name: 'Best Rating', href: '#', current: false },
     { name: 'Newest', href: '#', current: false },
@@ -16,17 +15,13 @@ const sortOptions = [
     { name: 'Price: High to Low', href: '#', current: false },
   ]
   const subCategories = [
-  
-  
     { name: 'Totes', href: '#' },
     { name: 'Backpacks', href: '#' },
     { name: 'Travel Bags', href: '#' },
     { name: 'Hip Bags', href: '#' },
     { name: 'Laptop Sleeves', href: '#' },
   ]
-  const filters = [
-  
-  
+  const filters = [ 
     {
       id: 'color',
       name: 'Color',
@@ -73,7 +68,7 @@ const sortOptions = [
     {
       id: 1,
       name: 'Basic Tee',
-      href: '#',
+      href: '/contact',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
       imageAlt: "Front of men's Basic Tee in black.",
       price: '$35',
@@ -110,12 +105,14 @@ const Shop: React.FC = () => {
 
         <div className="bg-white">
           <div>
+
              <div className="mx-auto max-w-full">
-            <div className="h-[15rem] w-full bg-[#06132E] text-white flex flex-col items-center justify-center">
-                <div className="text-sm text-center mb-4">Precision Cycling</div>
-                <div className="text-3xl font-bold mb-2 text-center">Shop</div>
+              <div className="h-[15rem] w-full bg-[#06132E] text-white flex flex-col items-center justify-center">
+                  <div className="text-base text-center mb-4">Precision Cycling</div>
+                  <div className="text-4xl font-bold mb-2 text-center">Shop</div>
+              </div>
             </div>
-        </div>
+
             <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-24">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900">New Arrivals</h1>
@@ -273,7 +270,6 @@ const Shop: React.FC = () => {
                         </div>
                       </div>
                     </div>
-                    
                     </div>
                 </div>
               </section>

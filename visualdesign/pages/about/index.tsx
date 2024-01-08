@@ -12,6 +12,7 @@ import WhatsApp from "../../public/WhatsApp.png"
 import Messenger from "../../public/Messenger.png"
 import Femke from "../../public/FemkeVerlinden.jpg";
 import cover from "../../public/BikeCover.jpg"
+import logo2 from "../../public/Logo2.png";
 
 const About : React.FC = () => {
     return (
@@ -23,8 +24,8 @@ const About : React.FC = () => {
         <main className="">
         <div className="mx-auto max-w-full">
             <div className="h-[15rem] w-full bg-[#06132E] text-white flex flex-col items-center justify-center">
-                <div className="text-sm text-center mb-4">Precision Cycling</div>
-                <div className="text-3xl font-bold mb-2 text-center">About us</div>
+                <div className="text-base text-center mb-4">Precision Cycling</div>
+                <div className="text-4xl font-bold mb-2 text-center">About us</div>
             </div>
         </div>
         
@@ -69,7 +70,7 @@ const About : React.FC = () => {
                         height={300}
                         className="rounded-2xl"
                     />
-                    <p className="absolute bottom-0 left-0 right-0 text-white font-bold text-sm bg-[#06132E] text-center py-2">Femke Verlinden</p>
+                    <p className="absolute bottom-0 left-0 right-0 text-white font-bold text-sm bg-[#06132E] text-center py-1">Femke Verlinden</p>
                 </div>
                 
                 <div className="flex flex-col text-center lg:text-left pl-20">
