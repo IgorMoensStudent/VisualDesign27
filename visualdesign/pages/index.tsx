@@ -33,8 +33,7 @@ const Home = () => {
                 <div className="mx-auto max-w-full relative">
                     <div className="h-[29rem] w-full bg-[#06132E] text-white flex flex-col items-center justify-center relative">
                         <div className="relative z-10 text-6xl font-bold mb-2 text-center headerFont">Precision Cycling</div>
-                        <div className="relative z-10 text-xl text-center mt-4 headerFont">Repair / Upgrade</div>
-                        <div className="relative z-10 text-xl text-center mb-4 headerFont">Shop</div>
+                        <div className="relative z-10 text-xl text-center mt-4 bodyFont">Repair / Upgrade Shop</div>
 
                         <div className="absolute top-20 mt-4 left-0 w-full h-full flex flex-col items-center justify-center">
                             <div className="flex flex-wrap gap-2">
