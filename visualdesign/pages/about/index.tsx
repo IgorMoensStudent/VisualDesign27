@@ -24,8 +24,8 @@ const About : React.FC = () => {
         <main className="">
         <div className="mx-auto max-w-full">
             <div className="h-[15rem] w-full bg-[#06132E] text-white flex flex-col items-center justify-center">
-                <div className="text-base text-center mb-4">Precision Cycling</div>
-                <div className="text-4xl font-bold mb-2 text-center">About us</div>
+                <div className="text-base text-center mb-3 headerFont">Precision Cycling</div>
+                <div className="text-4xl font-bold mb-1 text-center headerFont">About us</div>
             </div>
         </div>
         
@@ -101,8 +101,8 @@ const About : React.FC = () => {
                         objectPosition="top-center"
                         />
                         <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center">
-                            <div className="text-sm text-center mb-4 text-[#F5F5F5]">Precision Cycling</div>
-                            <div className="text-3xl font-bold mb-2 text-center text-[#E5E4E2]">Do you need help with repairs / upgrades?</div>
+                            <div className="text-base text-center mb-4 text-[#E5E4E2] headerFont">Precision Cycling</div>
+                            <div className="text-4xl font-bold mb-2 text-center text-[#E5E4E2] headerFont">Do you need help with repairs / upgrades?</div>
                             <div className="flex flex-wrap gap-2"><Button outline gradientDuoTone="pinkToOrange"><Link href="/appointment">Make an appointment</Link></Button></div>
                         </div>
                     </div>

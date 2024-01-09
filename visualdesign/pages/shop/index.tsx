@@ -108,14 +108,14 @@ const Shop: React.FC = () => {
 
              <div className="mx-auto max-w-full">
               <div className="h-[15rem] w-full bg-[#06132E] text-white flex flex-col items-center justify-center">
-                  <div className="text-base text-center mb-4">Precision Cycling</div>
-                  <div className="text-4xl font-bold mb-2 text-center">Shop</div>
+                  <div className="text-base text-center mb-3 headerFont">Precision Cycling</div>
+                  <div className="text-4xl font-bold mb-1 text-center headerFont">Shop</div>
               </div>
             </div>
 
             <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-24">
-                <h1 className="text-4xl font-bold tracking-tight text-gray-900">New Arrivals</h1>
+                <h1 className="text-4xl font-bold tracking-tight text-gray-900 headerFont">New Arrivals</h1>
 
                 <div className="flex items-center">
                   <Menu as="div" className="relative inline-block text-left">

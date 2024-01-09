@@ -13,8 +13,8 @@ const Contact: React.FC = () => {
       <main>
         <div className="mx-auto max-w-full">
                 <div className="h-[15rem] w-full bg-[#06132E] text-white flex flex-col items-center justify-center">
-                    <div className="text-base text-center mb-4">Precision Cycling</div>
-                    <div className="text-4xl font-bold mb-2 text-center">Contact Us</div>
+                    <div className="text-base text-center mb-3 headerFont">Precision Cycling</div>
+                    <div className="text-4xl font-bold mb-1 text-center headerFont">Contact Us</div>
                 </div>
             </div>
 
@@ -23,86 +23,89 @@ const Contact: React.FC = () => {
                 <div className="flex flex-col lg:flex-row gap-8 p-8 items-center justify-center bg-white rounded-lg shadow-lg p-8">
 
                     <div className="max-w-3xl w-full p-2 mb-40">
-                        <div className="mb-6 text-3xl font-bold">Contact Information</div>
-                        <div className="mb-4">
-                            <div className="flex items-center mb-2">
-                                <span className="w-6 h-6 mr-2 text-xl">
-                                    📧 
-                                </span>
-                                <span className="text-lg">info@precisioncycling.com</span>
+                        <div className="mb-6 text-3xl font-bold headerFont">Contact Information</div>
+                        <div className="bodyFont">
+                            <div className="mb-4">
+                                <div className="flex items-center mb-2">
+                                    <span className="w-6 h-6 mr-2 text-xl">
+                                        📧 
+                                    </span>
+                                    <span className="text-lg">info@precisioncycling.com</span>
+                                </div>
+                            </div>
+                            <div className="mb-4">
+                                <div className="flex items-center mb-2">
+                                    <span className="w-6 h-6 mr-2 text-xl">
+                                        📞
+                                    </span>
+                                    <span className="text-lg">+1 (123) 456-7890</span>
+                                </div>
+                            </div>
+                            <div className="mb-4">
+                                <div className="flex items-center mb-2">
+                                    <span className="w-6 h-6 mr-2 text-xl">
+                                        📍
+                                    </span>
+                                    <span className="text-lg">Leuven, Belgium</span>
+                                </div>
+                            </div>
+                            <div className="mb-4">
+                                <div className="flex items-center mb-2">
+                                    <span className="w-6 h-6 mr-2 text-xl">
+                                        🏢
+                                    </span>
+                                    <span className="text-lg">Nº BE 0935.791.352</span>
+                                </div>
+                            </div>
+                            <div className="mb-4">
+                                <div className="flex items-center mb-2">
+                                    <span className="w-6 h-6 mr-2 text-xl">
+                                        🕔
+                                    </span>
+                                    <span className="text-lg">Monday to Friday: 09.00 - 17.00.</span>
+                                </div>
                             </div>
                         </div>
-                        <div className="mb-4">
-                            <div className="flex items-center mb-2">
-                                <span className="w-6 h-6 mr-2 text-xl">
-                                    📞
-                                </span>
-                                <span className="text-lg">+1 (123) 456-7890</span>
-                            </div>
-                        </div>
-                        <div className="mb-4">
-                            <div className="flex items-center mb-2">
-                                <span className="w-6 h-6 mr-2 text-xl">
-                                    📍
-                                </span>
-                                <span className="text-lg">Leuven, Belgium</span>
-                            </div>
-                        </div>
-                        <div className="mb-4">
-                            <div className="flex items-center mb-2">
-                                <span className="w-6 h-6 mr-2 text-xl">
-                                    🏢
-                                </span>
-                                <span className="text-lg">Nº BE 0935.791.352</span>
-                            </div>
-                        </div>
-                        <div className="mb-4">
-                            <div className="flex items-center mb-2">
-                                <span className="w-6 h-6 mr-2 text-xl">
-                                    🕔
-                                </span>
-                                <span className="text-lg">Monday to Friday: 09.00 - 17.00.</span>
-                            </div>
-                        </div>
+                        
                     </div>
 
                     <div className="max-w-3xl w-full p-2 mt-7">
-                        <div className="mb-6 text-3xl font-bold">Send us a message</div>
+                        <div className="mb-6 text-3xl font-bold headerFont">Send us a message</div>
 
                         <div className="grid grid-cols-2 gap-6 mb-6">
                             <div>
-                                <TextInput id="name" type="text" placeholder="First name" required className="w-full" />
+                                <TextInput id="name" type="text" placeholder="First name" required className="w-full bodyFont" />
                             </div>
                             <div>
-                                <TextInput id="phone" type="text" placeholder="Last name" required className="w-full" />
+                                <TextInput id="phone" type="text" placeholder="Last name" required className="w-full bodyFont" />
                             </div>
                             <div>
-                                <TextInput id="email" type="email" placeholder="Email" required className="w-full" />
+                                <TextInput id="email" type="email" placeholder="Email" required className="w-full bodyFont" />
                             </div>
                             <div>
-                                <TextInput id="phone" type="text" placeholder="Phone number" required className="w-full" />
+                                <TextInput id="phone" type="text" placeholder="Phone number" required className="w-full bodyFont" />
                             </div>
                         </div>
 
                         <div className="mb-6">
                             <div className="flex items-center gap-3">
                                 <Checkbox id="call" />
-                                <Label htmlFor="call">Call back</Label>
+                                <Label htmlFor="call" className="bodyFont">Call back</Label>
 
                                 <Checkbox id="message" />
-                                <Label htmlFor="message">Send message</Label>
+                                <Label htmlFor="message" className="bodyFont">Send message</Label>
                             </div>
                         </div>
 
                         <div className="mb-6">
-                            <Textarea id="comment" placeholder="Your message..." required rows={6} className="w-full" />
+                            <Textarea id="comment" placeholder="Your message..." required rows={6} className="w-full bodyFont" />
                         </div>
 
                         <div className="mb-6 flex items-center gap-2">
                             <Checkbox id="accept" />
-                            <Label htmlFor="accept" className="flex">
+                            <Label htmlFor="accept" className="flex bodyFont">
                                 I agree with the&nbsp;
-                                <a href="#" className="text-cyan-600 hover:underline dark:text-cyan-500">
+                                <a href="#" className="text-cyan-600 hover:underline dark:text-cyan-500 ">
                                     terms and conditions
                                 </a>
                             </Label>

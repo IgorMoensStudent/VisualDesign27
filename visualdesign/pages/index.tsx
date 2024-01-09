@@ -32,10 +32,11 @@ const Home = () => {
             <main className="">
                 <div className="mx-auto max-w-full relative">
                     <div className="h-[29rem] w-full bg-[#06132E] text-white flex flex-col items-center justify-center relative">
-                        <div className="relative z-10 text-6xl font-bold mb-2 text-center">Precision Cycling</div>
-                        <div className="relative z-10 text-xl text-center mb-4">Repair / Upgrade Shop</div>
+                        <div className="relative z-10 text-6xl font-bold mb-2 text-center headerFont">Precision Cycling</div>
+                        <div className="relative z-10 text-xl text-center mt-4 headerFont">Repair / Upgrade</div>
+                        <div className="relative z-10 text-xl text-center mb-4 headerFont">Shop</div>
 
-                        <div className="absolute top-20  left-0 w-full h-full flex flex-col items-center justify-center">
+                        <div className="absolute top-20 mt-4 left-0 w-full h-full flex flex-col items-center justify-center">
                             <div className="flex flex-wrap gap-2">
                                 <Button outline gradientDuoTone="pinkToOrange">
                                     <Link href="/appointment">Make an appointment</Link>
@@ -64,7 +65,7 @@ const Home = () => {
                             height={400}
                             className="transition-opacity duration-300 group-hover:opacity-90"
                         />
-                        <p className="absolute bottom-8 left-4 text-white font-bold text-lg border-b-2 border-white transition-colors duration-300 hover:text-[#C8AF46] hover:border-[#C8AF46]"><Link href="/appointment">Repairs</Link></p>
+                        <p className="headerFont absolute bottom-8 left-4 text-white font-bold text-lg border-b-2 border-white transition-colors duration-300 hover:text-[#C8AF46] hover:border-[#C8AF46]"><Link href="/appointment">Repairs</Link></p>
                         </div>
                     </div>
 
@@ -77,7 +78,7 @@ const Home = () => {
                             height={400}
                             className="transition-opacity duration-300 group-hover:opacity-90"
                         />
-                        <p className="absolute bottom-8 left-4 text-white font-bold text-lg border-b-2 border-white transition-colors duration-300 hover:text-[#C8AF46] hover:border-[#C8AF46]"><Link href="/appointment">Upgrades</Link></p>
+                        <p className="headerFont absolute bottom-8 left-4 text-white font-bold text-lg border-b-2 border-white transition-colors duration-300 hover:text-[#C8AF46] hover:border-[#C8AF46]"><Link href="/appointment">Upgrades</Link></p>
                         </div>
                     </div>
 
@@ -90,7 +91,7 @@ const Home = () => {
                             height={400}
                             className="transition-opacity duration-300 group-hover:opacity-90"
                         />
-                        <p className="absolute bottom-8 left-4 text-white font-bold text-lg border-b-2 border-white transition-colors duration-300 hover:text-[#C8AF46] hover:border-[#C8AF46]"><Link href="/shop">Shop</Link></p>
+                        <p className="headerFont absolute bottom-8 left-4 text-white font-bold text-lg border-b-2 border-white transition-colors duration-300 hover:text-[#C8AF46] hover:border-[#C8AF46]"><Link href="/shop">Shop</Link></p>
                         </div>
                     </div>
                 </div>
@@ -120,7 +121,7 @@ const Home = () => {
                         </div>
 
                         <div className="flex flex-col text-center lg:text-left pl-20">
-                        <h2 className="text-4xl font-bold mb-4">A Bicycle Mechanic with Passion</h2>
+                        <h2 className="text-4xl font-bold mb-4 headerFont">A Bicycle Mechanic with Passion</h2>
                         <p className="text-gray-700 mb-4">
                             Hi, my name is Bart Vermeulen, I am a dedicated bicycle mechanic with over a decade of experience. 
                             I've worked in various bicycle stores in and around Leuven since 2006. My passion for cycling led me to merge my skills with entrepreneurial spirit, 
@@ -145,15 +146,15 @@ const Home = () => {
                         objectPosition="top-center"
                         />
                         <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center">
-                            <div className="text-base text-center mb-4 text-[#E5E4E2]">Precision Cycling</div>
-                            <div className="text-4xl font-bold mb-2 text-center text-[#E5E4E2]">Do you need help with repairs / upgrades?</div>
+                            <div className="text-base text-center mb-4 text-[#E5E4E2] headerFont">Precision Cycling</div>
+                            <div className="text-4xl font-bold mb-2 text-center text-[#E5E4E2] headerFont">Do you need help with repairs / upgrades?</div>
                             <div className="flex flex-wrap gap-2"><Button outline gradientDuoTone="pinkToOrange"><Link href="/appointment">Make an appointment</Link></Button></div>
                         </div>
                     </div>
                 </div>
                 
                 <div className="maincontainer">
-                <div className="mb-6 text-center text-2xl font-bold pt-4">Always ready, for a new adventure.</div>
+                <div className="mb-6 text-center text-2xl font-bold pt-4 headerFont">Always ready, for a new adventure.</div>
                     <div className="flex flex-wrap justify-center gap-1 ">
                         <div className="p-3">
                             <Image
