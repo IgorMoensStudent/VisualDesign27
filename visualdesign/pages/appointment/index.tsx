@@ -12,7 +12,7 @@ const Appointment: React.FC = () => {
             <main className="">
                 <div className="mx-auto max-w-full">
                     <div className="h-[15rem] w-full bg-[#06132E] text-white flex flex-col items-center justify-center">
-                        <div className="text-base text-center mb-3 headerFont">Precision Cycling</div>
+                        <div className="text-base text-center mb-3 bodyFont">Precision Cycling</div>
                         <div className="text-4xl font-bold mb-1 text-center headerFont">Make an appointment</div>
 
                         <div className="flex flex-wrap gap-2 mt-4">
