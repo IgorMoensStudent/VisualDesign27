@@ -110,7 +110,7 @@ const Home = () => {
                         
                             <div  className="absolute top-0 right-0 mt-4 mr-[-40px]">
                                 <Image
-                                    src={logo2}
+                                    src={logo1}
                                     alt="Logo 1"
                                     width={95} 
                                     height={95} 

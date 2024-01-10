@@ -13,6 +13,7 @@ import Messenger from "../../public/Messenger.png"
 import Femke from "../../public/FemkeVerlinden.jpg";
 import cover from "../../public/BikeCover.jpg"
 import logo2 from "../../public/Logo2.png";
+import van from "../../public/van.png";
 
 const About : React.FC = () => {
     return (
@@ -50,7 +51,7 @@ const About : React.FC = () => {
 
                 <div className="flex-shrink-0 mb-4 lg:mb-0 relative">
                     <Image
-                        src={Repair}
+                        src={van}
                         alt="Bart Vermeulen"
                         width={500}
                         height={500}

@@ -8,6 +8,15 @@ import item3 from "../../public/item_3.png";
 import item4 from "../../public/item_4.png";
 import item5 from "../../public/item_5.png";
 import item6 from "../../public/item_6.png";
+import item7 from "../../public/item_7.jpg";
+import item8 from "../../public/item_8.jpg";
+import item9 from "../../public/item_9.jpg";
+import item10 from "../../public/item_10.jpg";
+import item11 from "../../public/item_11.jpg";
+import item12 from "../../public/item_12.jpg";
+import item13 from "../../public/item_13.jpg";
+import item14 from "../../public/item_14.jpg";
+
 
 import { Fragment, useState } from 'react'
 import { Dialog, Disclosure, Menu, Transition } from '@headlessui/react'
@@ -285,6 +294,78 @@ const Shop: React.FC = () => {
                             <p className="text-sm font-medium">Cycling Jersey</p>
                             <p className="text-sm font-medium">€35</p>
                         </div> 
+
+                        <div className="p-4 flex flex-col items-center">
+                            <Image
+                                src={item7}
+                                alt="image2"
+                                width={200}
+                                height={200}
+                                className="rounded-2xl"
+                            />
+                            <p className="text-sm font-medium">Water botlle 750ml</p>
+                            <p className="text-sm font-medium">€15</p>
+                        </div> 
+                        <div className="p-4 flex flex-col items-center">
+                            <Image
+                                src={item8}
+                                alt="image2"
+                                width={200}
+                                height={200}
+                                className="rounded-2xl"
+                            />
+                            <p className="text-sm font-medium">Water botlle 750ml</p>
+                            <p className="text-sm font-medium">€15</p>
+                        </div> 
+
+                        <div className="p-4 flex flex-col items-center">
+                            <Image
+                                src={item9}
+                                alt="image2"
+                                width={200}
+                                height={200}
+                                className="rounded-2xl"
+                            />
+                            <p className="text-sm font-medium">Water botlle 750ml</p>
+                            <p className="text-sm font-medium">€15</p>
+                        </div> 
+
+                        <div className="p-4 flex flex-col items-center">
+                            <Image
+                                src={item12}
+                                alt="image2"
+                                width={200}
+                                height={200}
+                                className="rounded-2xl"
+                            />
+                            <p className="text-sm font-medium">Water botlle 750ml</p>
+                            <p className="text-sm font-medium">€15</p>
+                        </div> 
+
+                        <div className="p-4 flex flex-col items-center">
+                            <Image
+                                src={item13}
+                                alt="image2"
+                                width={200}
+                                height={200}
+                                className="rounded-2xl"
+                            />
+                            <p className="text-sm font-medium">Water botlle 750ml</p>
+                            <p className="text-sm font-medium">€15</p>
+                        </div> 
+
+                        <div className="p-4 flex flex-col items-center">
+                            <Image
+                                src={item14}
+                                alt="image2"
+                                width={200}
+                                height={200}
+                                className="rounded-2xl"
+                            />
+                            <p className="text-sm font-medium">Water botlle 750ml</p>
+                            <p className="text-sm font-medium">€15</p>
+                        </div> 
+  
                     </div>
 
                       </div>
