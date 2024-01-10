@@ -1,10 +1,18 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
+
+import item1 from "../../public/item_1.png";
+import item2 from "../../public/item_2.png";
+import item3 from "../../public/item_3.png";
+import item4 from "../../public/item_4.png";
+import item5 from "../../public/item_5.png";
+import item6 from "../../public/item_6.png";
 
 import { Fragment, useState } from 'react'
 import { Dialog, Disclosure, Menu, Transition } from '@headlessui/react'
-import { XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, FunnelIcon, MinusIcon, PlusIcon, Squares2X2Icon } from '@heroicons/react/20/solid'
+
 
 
 const sortOptions = [
@@ -62,38 +70,6 @@ const sortOptions = [
   function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
   }
-  
-
-  const products = [
-    {
-      id: 1,
-      name: 'Basic Tee',
-      href: '/contact',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
-      imageAlt: "Front of men's Basic Tee in black.",
-      price: '$35',
-      color: 'Black',
-    },
-    {
-      id: 2,
-      name: 'Basic Tee',
-      href: '#',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
-      imageAlt: "Front of men's Basic Tee in black.",
-      price: '$45',
-      color: 'Black',
-    },
-    {
-      id: 3,
-      name: 'Basic Tee',
-      href: '#',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
-      imageAlt: "Front of men's Basic Tee in black.",
-      price: '$55',
-      color: 'Black',
-    },
-    // More products...
-  ]
   
 
 const Shop: React.FC = () => {
@@ -243,34 +219,78 @@ const Shop: React.FC = () => {
                       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
                         <h2 className="text-2xl font-bold tracking-tight text-gray-900"></h2>
 
-                        <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-                          {products.map((product) => (
-                            <div key={product.id} className="group relative">
-                              <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                                <img
-                                  src={product.imageSrc}
-                                  alt={product.imageAlt}
-                                  className="h-full w-full object-cover object-center lg:h-full lg:w-full"
-                                />
-                              </div>
-                              <div className="mt-4 flex justify-between">
-                                <div>
-                                  <h3 className="text-sm text-gray-700">
-                                    <a href={product.href}>
-                                      <span aria-hidden="true" className="absolute inset-0" />
-                                      {product.name}
-                                    </a>
-                                  </h3>
-                                  <p className="mt-1 text-sm text-gray-500">{product.color}</p>
-                                </div>
-                                <p className="text-sm font-medium text-gray-900">{product.price}</p>
-                              </div>
-                            </div>
-                          ))}
+                        <div className="flex flex-wrap justify-center gap-2">
+                        <div className="p-4 flex flex-col items-center">
+                          <Image
+                            src={item1}
+                            alt="item1"
+                            width={200}
+                            height={200}
+                          />
+                          <p className="text-sm font-medium">Cycling Jersey</p>
+                          <p className="text-sm font-medium">€35</p>
                         </div>
+                        <div className="p-4 flex flex-col items-center">
+                            <Image
+                                src={item2}
+                                alt="image3"
+                                width={200}
+                                height={200}
+                                className="rounded-2xl"
+                            />
+                            <p className="text-sm font-medium">Cycling Jersey</p>
+                            <p className="text-sm font-medium">€35</p>
+                        </div>
+                        <div className="p-4 flex flex-col items-center">
+                            <Image
+                                src={item3}
+                                alt="image2"
+                                width={200}
+                                height={200}
+                                className="rounded-2xl"
+                            />
+                            <p className="text-sm font-medium">Cycling Jersey</p>
+                            <p className="text-sm font-medium">€35</p>
+                        </div>
+                        <div className="p-4 flex flex-col items-center">
+                            <Image
+                                src={item4}
+                                alt="image2"
+                                width={200}
+                                height={200}
+                                className="rounded-2xl"
+                            />
+                            <p className="text-sm font-medium">Cycling Jersey</p>
+                            <p className="text-sm font-medium">€35</p>
+                        </div>
+                        <div className="p-4 flex flex-col items-center">
+                            <Image
+                                src={item5}
+                                alt="image2"
+                                width={200}
+                                height={200}
+                                className="rounded-2xl"
+                            />
+                            <p className="text-sm font-medium">Cycling Jersey</p>
+                            <p className="text-sm font-medium">€35</p>
+                        </div>
+                        <div className="p-4 flex flex-col items-center">
+                            <Image
+                                src={item6}
+                                alt="image2"
+                                width={200}
+                                height={200}
+                                className="rounded-2xl"
+                            />
+                            <p className="text-sm font-medium">Cycling Jersey</p>
+                            <p className="text-sm font-medium">€35</p>
+                        </div> 
+                    </div>
+
                       </div>
                     </div>
                     </div>
+
                 </div>
               </section>
             </main>
